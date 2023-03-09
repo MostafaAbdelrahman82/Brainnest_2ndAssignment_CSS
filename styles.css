@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Fonts/Roboto-Black.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Fonts/Roboto-LightItalic.ttf);
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Homepage - Sign Up Button */
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: bold;
+    max-width: fit-content;
+    padding:  6px 20px;
+    border: 1px solid #3882F6;
+    border-radius: 5px;
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    background-color: #F9FAF8;
+    color: #3882F6;
+    border: 1px solid #F9FAF8;
+    cursor: pointer; 
+}
+
+/* Header + Footer */
+
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.navbar {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14%;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+    transition: all 200ms ease-in-out;
+}
+
+.nav-item:hover {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/* Homepage - Main Section */
+
+.main-text-section {
+    background-color: #1F2937;
+    display: flex;
+    padding: 50px 14%;
+}
+
+.main-text {
+    margin-right: 50px;
+    max-width: 50%;
+}
+
+.main-text h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+.main-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-align: justify;
+    line-height: 2;
+}
+
+.main-text .main-text-welcome {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-text-image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-text-section {
+        flex-direction: column;
+    }
+    
+    .main-text {
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* Homepage - Second Section */
+
+.second-section{
+   text-align: center;
+   margin: 30px 0;
+}
+
+.second-section h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.second-section-figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.second-section-figure figure {
+    flex-basis: 250px;
+    transition: all 200ms ease-in-out;
+}
+
+.second-section-figure figure:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.second-section-figure img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.second-section-figure figcaption {
+    font-style: italic;
+    font-weight: 900;
+}
+
+/* Homepage - Third Section */
+
+.third-section {
+    background-color: #E5E7EB;
+    padding: 40px 20%;
+    text-align: center;
+}
+
+.third-section-infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #1F2937;
+    font-size: 20px;
+}
+
+.third-section-infos .fa {
+    background-color: #1F2937;
+    border: none;
+}
+
+.third-section-infos .fa:hover {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    border: 1px solid #1F2937;
+}
+
+/* Homepage - Sign Up Box */
+
+.sign-up-box {
+    background-color: #3882F6;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px 100px;
+    border-radius: 5px;
+    color: #F9FAF8;
+    text-align: justify;
+    display: flex;
+}
+
+.sign-up-box button {
+    margin-left: 30px;
+    border: 1px solid #F9FAF8;
+}
+
+/* Menu Page - Cover */
+
+.menu-cover {
+    background-image: url("./Image/MenuPic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 380px;
+}
+
+.menu-list {
+    font-size: 40px;
+    color: #F9FAF8;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu-list li {
+    padding: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.menu-list li:hover {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.menu-list a {
+    text-align: center;
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+/* Menu Page - Content */
+
+.menu-items h2, h3 {
+    text-align: center;
+    color: #1F2937;
+}
+
+.menu-items h2 {
+    font-size: 35px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 8px;
+}
+
+.menu-items h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.menu-items h4 {
+    text-align: center;
+    font-size: 23px;
+}
+
+.drinks-menu {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+}
+
+.drinks-item {
+    font-size: 17px;
+    line-height: 2;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.menu-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.menu-items-container figure {
+    flex-basis: 150px;
+    transition: all 200ms ease-in-out;
+}
+
+.menu-items-container figure:hover {
+    scale: 1.2;
+    font-weight: 700;
+}
+
+.menu-items-container img {
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.menu-items-container figure figcaption {
+    text-align: center;
+}
+
+.back-button {
+    display: flex;
+    justify-content: end;
+    margin: 0 30px 10px;
+}
+
+.back-button:hover {
+    color: #3882F6;
+    cursor: pointer; 
+}
+
+/* Reservation Page */
+
+.reservations-heading {
+    text-align: center;
+}
+
+.reservations {
+    margin: 0 auto 20px;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    font-size: 18px;
+    color: #1F2937;
+    background-color: #f5f6f6;
+    border: 3px solid #1F2937;
+    box-shadow: 3px 3px 5px grey;
+    border-radius: 10px;
+}
+
+.reservation-guests label {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.reservation-guests select {
+    margin: 10px;
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    width: 300px;
+}
+
+.reservation-date label {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.reservation-date input {
+    margin: 10px;
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    width: 300px;
+}
+
+.reservations-hours {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    justify-items: center;
+}
+
+.reservation-time label {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.reservation-time button {
+    background-color: #1F2937;
+    border: 1px solid #1F2937;
+}
+
+.reservation-time button:hover {
+    color: #1F2937;
+    background-color: #F9FAF8;
+    border: 1px solid #1F2937;
+}
+
+.reservation-contact label {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.reservation-contact input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    width: 300px;
+}
+
+.reservation-contact button {
+    background-color: #1F2937;
+    border: 1px solid #1F2937;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.reservation-contact button:hover {
+    color: #1F2937;
+    background-color: #F9FAF8;
+    border: 1px solid #1F2937;
+}
+
+  /* About Us Page - About Us Section */
+
+.about-us-section {
+    background-color: #1F2937;
+    padding: 50px 14%;
+}
+
+.about-us-section h1 {
+    text-align: center;
+    color: #F9FAF8;
+    margin: 20px;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.about-us-section p {
+    line-height: 2;
+    text-align:justify;
+    color: #E5E7EB;
+    font-size: 20px;
+}
+
+.about-us-section img {
+    display: block;
+    height: auto;
+    width:70%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+  /* About Us Page - Contact Us Section */
+
+.contact-us-section {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.contact-us-form label {
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.contact-us-form input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    width: 300px;
+}
+
+.contact-us-form textarea {
+    margin: 5px;
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    width:375px;
+    height:100px;
+    resize: none;
+}
+
+.contact-us-form button {
+    background-color: #1F2937;
+    border: 1px solid #1F2937;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.contact-us-form button:hover {
+    color: #1F2937;
+    background-color: #F9FAF8;
+    border: 1px solid #1F2937;
+}
